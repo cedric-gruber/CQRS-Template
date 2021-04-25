@@ -27,8 +27,10 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
-TODO
+![screenshot](https://github.com/cedric-gruber/CQRS-Template/blob/master/Images/SolutionExplorer.png?raw=true)
+<p>
+  TODO
+</p>
 
 
 <!-- GETTING STARTED -->
