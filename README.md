@@ -12,7 +12,7 @@
 
 
 <!-- TABLE OF CONTENTS -->
-<details open="open">
+
   <summary><h2 style="display: inline-block">Table of Contents</h2></summary>
   <ol>
     <li><a href="#about-the-project">About The Project</a></li>
@@ -21,7 +21,6 @@
     <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
   </ol>
-</details>
 
 
 
@@ -61,6 +60,4 @@ Distributed under the MIT License.
 ## Contact
 
 Cedric Gruber - cedric.gruber@gmail.com
-
-Project Link: [https://github.com/cedric-gruber/CQRS-Template]
 
