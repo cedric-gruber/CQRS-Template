@@ -40,7 +40,7 @@ TODO
    git clone https://github.com/cedric-gruber/CQRS-Template.git
    ```
 2. Create a zip file with the content of the src folder
-3. Place it in the folder
+3. Place it in the Visual Studio Project Template folder :
    ```
    C:\Users\{user}\Documents\{VisualStudioVersion}\Templates\ProjectTemplates
    ``` 
