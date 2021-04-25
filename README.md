@@ -33,7 +33,7 @@
   <li>Creation of the projects and their dependencies</li>
   <li>Configuration of MediatR</li>
   <li>Configuration of AutoMapper</li>
-  <li>Creation of middlewares to handle exceptions</li>
+  <li>Creation of middlewares to handle the exceptions</li>
   <li>Creation of Domain Driven Design base classes</li>
   <li>TodoList Example using all the layers</li>
 </ul>
