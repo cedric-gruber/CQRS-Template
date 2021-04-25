@@ -1,0 +1,24 @@
+<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Project">
+  <TemplateData>
+    <Name>Common.Infrastructure.FileSystem</Name>
+    <Description>&lt;No description available&gt;</Description>
+    <ProjectType>CSharp</ProjectType>
+    <ProjectSubType>
+    </ProjectSubType>
+    <SortOrder>1000</SortOrder>
+    <CreateNewFolder>true</CreateNewFolder>
+    <DefaultName>Common.Infrastructure.FileSystem</DefaultName>
+    <ProvideDefaultName>true</ProvideDefaultName>
+    <LocationField>Enabled</LocationField>
+    <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
+    <CreateInPlace>true</CreateInPlace>
+    <Icon>__TemplateIcon.ico</Icon>
+  </TemplateData>
+  <TemplateContent>
+    <Project TargetFileName="Common.Infrastructure.FileSystem.csproj" File="Common.Infrastructure.FileSystem.csproj" ReplaceParameters="true">
+      <ProjectItem ReplaceParameters="true" TargetFileName="FileService.cs">FileService.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="IFileService.cs">IFileService.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="ModuleDependencies.cs">ModuleDependencies.cs</ProjectItem>
+    </Project>
+  </TemplateContent>
+</VSTemplate>

@@ -1,0 +1,32 @@
+<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Project">
+  <TemplateData>
+    <Name>Dependencies</Name>
+    <Description>&lt;No description available&gt;</Description>
+    <ProjectType>CSharp</ProjectType>
+    <ProjectSubType>
+    </ProjectSubType>
+    <SortOrder>1000</SortOrder>
+    <CreateNewFolder>true</CreateNewFolder>
+    <DefaultName>Dependencies</DefaultName>
+    <ProvideDefaultName>true</ProvideDefaultName>
+    <LocationField>Enabled</LocationField>
+    <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
+    <CreateInPlace>true</CreateInPlace>
+    <Icon>__TemplateIcon.ico</Icon>
+  </TemplateData>
+  <TemplateContent>
+    <Project TargetFileName="Dependencies.csproj" File="Dependencies.csproj" ReplaceParameters="true">
+      <Folder Name="ExceptionMiddlewares" TargetFolderName="ExceptionMiddlewares">
+        <ProjectItem ReplaceParameters="true" TargetFileName="AbstractExceptionHandlerMiddleware.cs">AbstractExceptionHandlerMiddleware.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="CommandExceptionHandlerMiddleware.cs">CommandExceptionHandlerMiddleware.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="CommonExceptionHandlerMiddleware.cs">CommonExceptionHandlerMiddleware.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="ExceptionHandlerMiddleware.cs">ExceptionHandlerMiddleware.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="QueryExceptionHandlerMiddleware.cs">QueryExceptionHandlerMiddleware.cs</ProjectItem>
+      </Folder>
+      <ProjectItem ReplaceParameters="true" TargetFileName="AutoMapperDependencies.cs">AutoMapperDependencies.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="ExceptionDependencies.cs">ExceptionDependencies.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="MediatrDependencies.cs">MediatrDependencies.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="ModuleDependencies.cs">ModuleDependencies.cs</ProjectItem>
+    </Project>
+  </TemplateContent>
+</VSTemplate>

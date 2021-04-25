@@ -1,0 +1,57 @@
+<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="ProjectGroup">
+  <TemplateData>
+    <Name>CQRS Project</Name>
+    <Description>Template for CQRS Projects by Cedric Gruber</Description>
+    <ProjectType>CSharp</ProjectType>
+    <Icon>__TemplateIcon.ico</Icon>
+    <DefaultName>Project</DefaultName>
+  </TemplateData>
+  <TemplateContent>
+        <ProjectCollection>
+            <ProjectTemplateLink ProjectName="$safeprojectname$.WebApp" CopyParameters="true">
+                WebApp\MyTemplate.vstemplate
+            </ProjectTemplateLink>
+            <ProjectTemplateLink ProjectName="$safeprojectname$" CopyParameters="true">
+                Console\MyTemplate.vstemplate
+            </ProjectTemplateLink>
+            <ProjectTemplateLink ProjectName="$safeprojectname$.Dependencies" CopyParameters="true">
+                Dependencies\MyTemplate.vstemplate
+            </ProjectTemplateLink>
+            <SolutionFolder Name="Command">
+                <ProjectTemplateLink ProjectName="$safeprojectname$.Command.Application" CopyParameters="true">
+                    Command\Command.Application\MyTemplate.vstemplate
+                </ProjectTemplateLink>
+                <ProjectTemplateLink ProjectName="$safeprojectname$.Command.Data.InMemory" CopyParameters="true">
+                    Command\Command.Data.InMemory\MyTemplate.vstemplate
+                </ProjectTemplateLink>
+                <ProjectTemplateLink ProjectName="$safeprojectname$.Command.Domain" CopyParameters="true">
+                    Command\Command.Domain\MyTemplate.vstemplate
+                </ProjectTemplateLink>
+                <ProjectTemplateLink ProjectName="$safeprojectname$.Command.Infrastructure" CopyParameters="true">
+                    Command\Command.Infrastructure\MyTemplate.vstemplate
+                </ProjectTemplateLink>
+            </SolutionFolder>
+            <SolutionFolder Name="Common">
+                <ProjectTemplateLink ProjectName="$safeprojectname$.Common" CopyParameters="true">
+                    Common\Common\MyTemplate.vstemplate
+                </ProjectTemplateLink>
+				<SolutionFolder Name="Infrastructure">
+					<ProjectTemplateLink ProjectName="$safeprojectname$.Common.Infrastructure.FileSystem" CopyParameters="true">
+						Common\Infrastructure\Common.Infrastructure.FileSystem\MyTemplate.vstemplate
+					</ProjectTemplateLink>
+				</SolutionFolder>
+            </SolutionFolder>
+            <SolutionFolder Name="Query">
+                <ProjectTemplateLink ProjectName="$safeprojectname$.Query.Application" CopyParameters="true">
+                    Query\Query.Application\MyTemplate.vstemplate
+                </ProjectTemplateLink>
+                <ProjectTemplateLink ProjectName="$safeprojectname$.Query.Data.InMemory" CopyParameters="true">
+                    Query\Query.Data.InMemory\MyTemplate.vstemplate
+                </ProjectTemplateLink>
+                <ProjectTemplateLink ProjectName="$safeprojectname$.Query.Infrastructure" CopyParameters="true">
+                    Query\Query.Infrastructure\MyTemplate.vstemplate
+                </ProjectTemplateLink>
+            </SolutionFolder>
+        </ProjectCollection>
+  </TemplateContent>
+</VSTemplate>

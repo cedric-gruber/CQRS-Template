@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="10.1.1" />
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="8.1.1" />
+    <PackageReference Include="MediatR" Version="9.0.0" />
+    <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="9.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="2.2.0" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="5.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\$ext_safeprojectname$.Command.Application\$ext_safeprojectname$.Command.Application.csproj" />
+    <ProjectReference Include="..\$ext_safeprojectname$.Command.Data.InMemory\$ext_safeprojectname$.Command.Data.InMemory.csproj" />
+    <ProjectReference Include="..\$ext_safeprojectname$.Command.Domain\$ext_safeprojectname$.Command.Domain.csproj" />
+    <ProjectReference Include="..\$ext_safeprojectname$.Command.Infrastructure\$ext_safeprojectname$.Command.Infrastructure.csproj" />
+    <ProjectReference Include="..\$ext_safeprojectname$.Common.Infrastructure.FileSystem\$ext_safeprojectname$.Common.Infrastructure.FileSystem.csproj" />
+    <ProjectReference Include="..\$ext_safeprojectname$.Common\$ext_safeprojectname$.Common.csproj" />
+    <ProjectReference Include="..\$ext_safeprojectname$.Query.Application\$ext_safeprojectname$.Query.Application.csproj" />
+    <ProjectReference Include="..\$ext_safeprojectname$.Query.Data.InMemory\$ext_safeprojectname$.Query.Data.InMemory.csproj" />
+    <ProjectReference Include="..\$ext_safeprojectname$.Query.Infrastructure\$ext_safeprojectname$.Query.Infrastructure.csproj" />
+  </ItemGroup>
+
+</Project>

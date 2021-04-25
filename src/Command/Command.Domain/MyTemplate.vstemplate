@@ -1,0 +1,52 @@
+<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Project">
+  <TemplateData>
+    <Name>Command.Domain</Name>
+    <Description>&lt;No description available&gt;</Description>
+    <ProjectType>CSharp</ProjectType>
+    <ProjectSubType>
+    </ProjectSubType>
+    <SortOrder>1000</SortOrder>
+    <CreateNewFolder>true</CreateNewFolder>
+    <DefaultName>Command.Domain</DefaultName>
+    <ProvideDefaultName>true</ProvideDefaultName>
+    <LocationField>Enabled</LocationField>
+    <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
+    <CreateInPlace>true</CreateInPlace>
+    <Icon>__TemplateIcon.ico</Icon>
+  </TemplateData>
+  <TemplateContent>
+    <Project TargetFileName="Command.Domain.csproj" File="Command.Domain.csproj" ReplaceParameters="true">
+      <Folder Name="BaseComponents" TargetFolderName="BaseComponents">
+        <ProjectItem ReplaceParameters="true" TargetFileName="AggregateRoot.cs">AggregateRoot.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="IDomainEvent.cs">IDomainEvent.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="ValueObject.cs">ValueObject.cs</ProjectItem>
+      </Folder>
+      <Folder Name="TodoList" TargetFolderName="TodoList">
+        <Folder Name="DomainEvents" TargetFolderName="DomainEvents">
+          <ProjectItem ReplaceParameters="true" TargetFileName="TodoAddedEvent.cs">TodoAddedEvent.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="TodoCompletedEvent.cs">TodoCompletedEvent.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="TodoListCreatedEvent.cs">TodoListCreatedEvent.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="TodoListNameChangedEvent.cs">TodoListNameChangedEvent.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="TodoNameChangedEvent.cs">TodoNameChangedEvent.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="TodoRemovedEvent.cs">TodoRemovedEvent.cs</ProjectItem>
+        </Folder>
+        <Folder Name="Enum" TargetFolderName="Enum">
+          <ProjectItem ReplaceParameters="true" TargetFileName="TodoListStatus.cs">TodoListStatus.cs</ProjectItem>
+        </Folder>
+        <Folder Name="Exceptions" TargetFolderName="Exceptions">
+          <ProjectItem ReplaceParameters="true" TargetFileName="NameInvalidException.cs">NameInvalidException.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="TodoAlreadyCompletedException.cs">TodoAlreadyCompletedException.cs</ProjectItem>
+        </Folder>
+        <Folder Name="ValueObjects" TargetFolderName="ValueObjects">
+          <ProjectItem ReplaceParameters="true" TargetFileName="TodoId.cs">TodoId.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="TodoListId.cs">TodoListId.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="TodoListName.cs">TodoListName.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="TodoName.cs">TodoName.cs</ProjectItem>
+        </Folder>
+        <ProjectItem ReplaceParameters="true" TargetFileName="Todo.cs">Todo.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="TodoList.cs">TodoList.cs</ProjectItem>
+      </Folder>
+      <ProjectItem ReplaceParameters="true" TargetFileName="ModuleDependencies.cs">ModuleDependencies.cs</ProjectItem>
+    </Project>
+  </TemplateContent>
+</VSTemplate>
