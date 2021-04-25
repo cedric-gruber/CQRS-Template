@@ -28,9 +28,15 @@
 ## About The Project
 
 ![screenshot](https://github.com/cedric-gruber/CQRS-Template/blob/master/Images/SolutionExplorer.png?raw=true)
-<p>
-  TODO
-</p>
+<p>What this template do :</p>
+<ul>
+  <li>Creation of the projects and their dependencies</li>
+  <li>Configuration of MediatR</li>
+  <li>Configuration of AutoMapper</li>
+  <li>Creation of middlewares to handle exceptions</li>
+  <li>Creation of Domain Driven Design base classes</li>
+  <li>TodoList Example using all the layers</li>
+</ul>
 
 
 <!-- GETTING STARTED -->
@@ -49,7 +55,10 @@
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-TODO
+![screenshot](https://github.com/cedric-gruber/CQRS-Template/blob/master/Images/CreateProject.png?raw=true)
+
+<p>When you create a new project, select the template CQRS Project</p>
+
 
 
 <!-- LICENSE -->
