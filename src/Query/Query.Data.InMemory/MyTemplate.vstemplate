@@ -16,8 +16,10 @@
   </TemplateData>
   <TemplateContent>
     <Project TargetFileName="Query.Data.InMemory.csproj" File="Query.Data.InMemory.csproj" ReplaceParameters="true">
+      <Folder Name="Repositories" TargetFolderName="Repositories">
+        <ProjectItem ReplaceParameters="true" TargetFileName="TodoListRepository.cs">TodoListRepository.cs</ProjectItem>
+      </Folder>
       <ProjectItem ReplaceParameters="true" TargetFileName="ModuleDependencies.cs">ModuleDependencies.cs</ProjectItem>
-      <ProjectItem ReplaceParameters="true" TargetFileName="TodoListRepository.cs">TodoListRepository.cs</ProjectItem>
     </Project>
   </TemplateContent>
 </VSTemplate>

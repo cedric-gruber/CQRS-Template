@@ -17,25 +17,32 @@
   <TemplateContent>
     <Project TargetFileName="Query.Application.csproj" File="Query.Application.csproj" ReplaceParameters="true">
       <Folder Name="Enums" TargetFolderName="Enums">
-        <Folder Name="TodoList" TargetFolderName="TodoList">
+        <Folder Name="TodoLists" TargetFolderName="TodoLists">
           <ProjectItem ReplaceParameters="true" TargetFileName="AllTodoListsSortBy.cs">AllTodoListsSortBy.cs</ProjectItem>
           <ProjectItem ReplaceParameters="true" TargetFileName="AllTodosSortBy.cs">AllTodosSortBy.cs</ProjectItem>
         </Folder>
         <ProjectItem ReplaceParameters="true" TargetFileName="SortOrder.cs">SortOrder.cs</ProjectItem>
       </Folder>
+      <Folder Name="Extensions" TargetFolderName="Extensions">
+        <Folder Name="TodoLists" TargetFolderName="TodoLists">
+          <ProjectItem ReplaceParameters="true" TargetFileName="SortByExtensions.cs">SortByExtensions.cs</ProjectItem>
+        </Folder>
+        <ProjectItem ReplaceParameters="true" TargetFileName="SortExtensions.cs">SortExtensions.cs</ProjectItem>
+      </Folder>
       <Folder Name="Infrastructure" TargetFolderName="Infrastructure">
-        <ProjectItem ReplaceParameters="true" TargetFileName="ITodoFileService.cs">ITodoFileService.cs</ProjectItem>
+        <Folder Name="TodoLists" TargetFolderName="TodoLists">
+          <ProjectItem ReplaceParameters="true" TargetFileName="ITodoFileService.cs">ITodoFileService.cs</ProjectItem>
+        </Folder>
       </Folder>
       <Folder Name="Models" TargetFolderName="Models">
-        <Folder Name="Mappings" TargetFolderName="Mappings">
-          <ProjectItem ReplaceParameters="true" TargetFileName="AutoMapperConfiguration.cs">AutoMapperConfiguration.cs</ProjectItem>
-        </Folder>
-        <Folder Name="TodoListModels" TargetFolderName="TodoListModels">
+        <Folder Name="TodoLists" TargetFolderName="TodoLists">
           <Folder Name="Mappings" TargetFolderName="Mappings">
-            <ProjectItem ReplaceParameters="true" TargetFileName="AllTodosProfile.cs">AllTodosProfile.cs</ProjectItem>
-            <ProjectItem ReplaceParameters="true" TargetFileName="TodoListConfiguration.cs">TodoListConfiguration.cs</ProjectItem>
-            <ProjectItem ReplaceParameters="true" TargetFileName="TodoListProfile.cs">TodoListProfile.cs</ProjectItem>
-            <ProjectItem ReplaceParameters="true" TargetFileName="TodosByListProfile.cs">TodosByListProfile.cs</ProjectItem>
+            <Folder Name="Profiles" TargetFolderName="Profiles">
+              <ProjectItem ReplaceParameters="true" TargetFileName="AllTodosProfile.cs">AllTodosProfile.cs</ProjectItem>
+              <ProjectItem ReplaceParameters="true" TargetFileName="TodoListProfile.cs">TodoListProfile.cs</ProjectItem>
+              <ProjectItem ReplaceParameters="true" TargetFileName="TodosByListProfile.cs">TodosByListProfile.cs</ProjectItem>
+            </Folder>
+            <ProjectItem ReplaceParameters="true" TargetFileName="TodoListMappingConfiguration.cs">TodoListMappingConfiguration.cs</ProjectItem>
           </Folder>
           <Folder Name="Projections" TargetFolderName="Projections">
             <ProjectItem ReplaceParameters="true" TargetFileName="AllTodoListsProjection.cs">AllTodoListsProjection.cs</ProjectItem>
@@ -48,16 +55,17 @@
             <ProjectItem ReplaceParameters="true" TargetFileName="TodosByListViewModel.cs">TodosByListViewModel.cs</ProjectItem>
           </Folder>
         </Folder>
+        <ProjectItem ReplaceParameters="true" TargetFileName="MappingConfiguration.cs">MappingConfiguration.cs</ProjectItem>
       </Folder>
       <Folder Name="Queries" TargetFolderName="Queries">
-        <Folder Name="TodoListQueries" TargetFolderName="TodoListQueries">
+        <Folder Name="TodoLists" TargetFolderName="TodoLists">
           <ProjectItem ReplaceParameters="true" TargetFileName="AllTodoListsQuery.cs">AllTodoListsQuery.cs</ProjectItem>
           <ProjectItem ReplaceParameters="true" TargetFileName="AllTodosQuery.cs">AllTodosQuery.cs</ProjectItem>
           <ProjectItem ReplaceParameters="true" TargetFileName="TodosByListQuery.cs">TodosByListQuery.cs</ProjectItem>
         </Folder>
       </Folder>
       <Folder Name="QueryHandlers" TargetFolderName="QueryHandlers">
-        <Folder Name="TodoListQueryHandlers" TargetFolderName="TodoListQueryHandlers">
+        <Folder Name="TodoLists" TargetFolderName="TodoLists">
           <ProjectItem ReplaceParameters="true" TargetFileName="AllTodoListsQueryHandler.cs">AllTodoListsQueryHandler.cs</ProjectItem>
           <ProjectItem ReplaceParameters="true" TargetFileName="AllTodosQueryHandler.cs">AllTodosQueryHandler.cs</ProjectItem>
           <ProjectItem ReplaceParameters="true" TargetFileName="TodosByListQueryHandler.cs">TodosByListQueryHandler.cs</ProjectItem>
@@ -66,6 +74,7 @@
       <Folder Name="Repositories" TargetFolderName="Repositories">
         <ProjectItem ReplaceParameters="true" TargetFileName="ITodoListRepository.cs">ITodoListRepository.cs</ProjectItem>
       </Folder>
+      <ProjectItem ReplaceParameters="true" TargetFileName="AssemblyAccessor.cs">AssemblyAccessor.cs</ProjectItem>
       <ProjectItem ReplaceParameters="true" TargetFileName="ModuleDependencies.cs">ModuleDependencies.cs</ProjectItem>
     </Project>
   </TemplateContent>

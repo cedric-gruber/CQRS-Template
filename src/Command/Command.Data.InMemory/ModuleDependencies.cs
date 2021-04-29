@@ -1,6 +1,7 @@
-﻿using Microsoft.Extensions.Caching.Memory;
+﻿using $ext_safeprojectname$.Command.Application.Repositories;
+using $safeprojectname$.Repositories;
+using Microsoft.Extensions.Caching.Memory;
 using Microsoft.Extensions.DependencyInjection;
-using $ext_safeprojectname$.Command.Application.Repositories;
 
 namespace $safeprojectname$
 {

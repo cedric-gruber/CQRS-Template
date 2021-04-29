@@ -1,4 +1,5 @@
-﻿namespace $safeprojectname$.BaseComponents
+﻿
+namespace $safeprojectname$.BaseComponents
 {
     public interface IDomainEvent
     {

@@ -25,9 +25,10 @@ namespace $safeprojectname$
             return File.ReadAllText(fullPath);
         }
 
-        public void AddFile(string filePath, string content)
+        public void AddFile(string filePath, string fileContent)
         {
             string fullPath = GetFullPath(filePath);
+
             string directoryPath = new FileInfo(fullPath).Directory.FullName;
 
             if (!Directory.Exists(directoryPath))
@@ -35,14 +36,14 @@ namespace $safeprojectname$
 
             using (StreamWriter sw = File.CreateText(fullPath))
             {
-                sw.Write(content);
+                sw.Write(fileContent);
             }
         }
 
         public void DeleteFile(string filePath)
         {
             string fullPath = GetFullPath(filePath);
-            
+
             File.Delete(fullPath);
         }
 

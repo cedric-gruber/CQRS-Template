@@ -1,5 +1,5 @@
-﻿using $ext_safeprojectname$.Command.Domain.TodoList;
-using $ext_safeprojectname$.Command.Domain.TodoList.ValueObjects;
+﻿using $ext_safeprojectname$.Command.Domain.TodoLists;
+using $ext_safeprojectname$.Command.Domain.TodoLists.ValueObjects;
 using System.Threading.Tasks;
 
 namespace $safeprojectname$.Repositories

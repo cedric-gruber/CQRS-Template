@@ -1,5 +1,4 @@
-﻿using Microsoft.Extensions.DependencyInjection;
-using $ext_safeprojectname$.Command.Application;
+﻿using $ext_safeprojectname$.Command.Application;
 using $ext_safeprojectname$.Command.Data.InMemory;
 using $ext_safeprojectname$.Command.Domain;
 using $ext_safeprojectname$.Command.Infrastructure;
@@ -8,6 +7,7 @@ using $ext_safeprojectname$.Common.Infrastructure.FileSystem;
 using $ext_safeprojectname$.Query.Application;
 using $ext_safeprojectname$.Query.Data.InMemory;
 using $ext_safeprojectname$.Query.Infrastructure;
+using Microsoft.Extensions.DependencyInjection;
 
 namespace $safeprojectname$
 {

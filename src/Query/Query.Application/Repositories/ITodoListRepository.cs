@@ -1,4 +1,4 @@
-﻿using $safeprojectname$.Models.TodoListModels.Projections;
+﻿using $safeprojectname$.Models.TodoLists.Projections;
 using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;

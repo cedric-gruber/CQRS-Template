@@ -1,4 +1,5 @@
-﻿namespace $safeprojectname$
+﻿
+namespace $safeprojectname$
 {
     public interface IPathAccessor
     {

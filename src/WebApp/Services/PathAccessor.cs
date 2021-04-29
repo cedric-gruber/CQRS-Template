@@ -1,5 +1,5 @@
-﻿using Microsoft.AspNetCore.Hosting;
-using $ext_safeprojectname$.Common;
+﻿using $ext_safeprojectname$.Common;
+using Microsoft.AspNetCore.Hosting;
 
 namespace $safeprojectname$.Services
 {

@@ -1,8 +1,8 @@
-﻿using MediatR;
+﻿using $ext_safeprojectname$.Command.Application.Commands.TodoLists;
+using $ext_safeprojectname$.Query.Application.Queries.TodoLists;
+using MediatR;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
-using $ext_safeprojectname$.Command.Application.Commands.TodoListCommands;
-using $ext_safeprojectname$.Query.Application.Queries.TodoListQueries;
 using System.Threading.Tasks;
 
 namespace $safeprojectname$.Controllers
@@ -34,7 +34,7 @@ namespace $safeprojectname$.Controllers
         [HttpGet("Todo")]
         public async Task<IActionResult> GetAllTodos([FromQuery] AllTodosQuery query)
             => Ok(await mediator.Send(query));
-        
+
         [HttpGet("{TodoListId}/Todo")]
         public async Task<IActionResult> GetTodosByList([FromRoute] TodosByListQuery query)
             => Ok(await mediator.Send(query));
