@@ -1,12 +1,12 @@
+using $ext_safeprojectname$.Common;
+using $ext_safeprojectname$.Dependencies;
+using $safeprojectname$.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.OpenApi.Models;
-using $ext_safeprojectname$.Common;
-using $ext_safeprojectname$.Dependencies;
-using $safeprojectname$.Services;
 
 namespace $safeprojectname$
 {
@@ -26,8 +26,8 @@ namespace $safeprojectname$
             services.AddLogging();
 
             services.AddModuleDependencies();
-            services.AddMediatRDependencies();
-            services.AddAutoMapperDependencies();
+            services.AddMediatR();
+            services.AddAutoMapper();
 
             services.AddControllers();
             services.AddSwaggerGen(c =>
@@ -46,7 +46,7 @@ namespace $safeprojectname$
                 app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "$safeprojectname$ v1"));
             }
 
-            app.AddExceptionMiddlewares();
+            app.AddExceptionHandlerMiddlewares();
 
             app.UseHttpsRedirection();
 

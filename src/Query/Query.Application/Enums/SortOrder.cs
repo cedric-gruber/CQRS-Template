@@ -1,4 +1,5 @@
-﻿namespace $safeprojectname$.Enums
+﻿
+namespace $safeprojectname$.Enums
 {
     public enum SortOrder
     {

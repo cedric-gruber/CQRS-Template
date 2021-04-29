@@ -21,7 +21,7 @@
         <ProjectItem ReplaceParameters="true" TargetFileName="IDomainEvent.cs">IDomainEvent.cs</ProjectItem>
         <ProjectItem ReplaceParameters="true" TargetFileName="ValueObject.cs">ValueObject.cs</ProjectItem>
       </Folder>
-      <Folder Name="TodoList" TargetFolderName="TodoList">
+      <Folder Name="TodoLists" TargetFolderName="TodoLists">
         <Folder Name="DomainEvents" TargetFolderName="DomainEvents">
           <ProjectItem ReplaceParameters="true" TargetFileName="TodoAddedEvent.cs">TodoAddedEvent.cs</ProjectItem>
           <ProjectItem ReplaceParameters="true" TargetFileName="TodoCompletedEvent.cs">TodoCompletedEvent.cs</ProjectItem>
@@ -36,6 +36,7 @@
         <Folder Name="Exceptions" TargetFolderName="Exceptions">
           <ProjectItem ReplaceParameters="true" TargetFileName="NameInvalidException.cs">NameInvalidException.cs</ProjectItem>
           <ProjectItem ReplaceParameters="true" TargetFileName="TodoAlreadyCompletedException.cs">TodoAlreadyCompletedException.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="TodoListAlreadyCompletedException.cs">TodoListAlreadyCompletedException.cs</ProjectItem>
         </Folder>
         <Folder Name="ValueObjects" TargetFolderName="ValueObjects">
           <ProjectItem ReplaceParameters="true" TargetFileName="TodoId.cs">TodoId.cs</ProjectItem>

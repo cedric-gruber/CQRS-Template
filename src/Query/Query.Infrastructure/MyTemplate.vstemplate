@@ -16,8 +16,10 @@
   </TemplateData>
   <TemplateContent>
     <Project TargetFileName="Query.Infrastructure.csproj" File="Query.Infrastructure.csproj" ReplaceParameters="true">
+      <Folder Name="TodoLists" TargetFolderName="TodoLists">
+        <ProjectItem ReplaceParameters="true" TargetFileName="TodoFileService.cs">TodoFileService.cs</ProjectItem>
+      </Folder>
       <ProjectItem ReplaceParameters="true" TargetFileName="ModuleDependencies.cs">ModuleDependencies.cs</ProjectItem>
-      <ProjectItem ReplaceParameters="true" TargetFileName="TodoFileService.cs">TodoFileService.cs</ProjectItem>
     </Project>
   </TemplateContent>
 </VSTemplate>

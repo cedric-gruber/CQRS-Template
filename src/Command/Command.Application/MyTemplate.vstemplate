@@ -17,7 +17,7 @@
   <TemplateContent>
     <Project TargetFileName="Command.Application.csproj" File="Command.Application.csproj" ReplaceParameters="true">
       <Folder Name="CommandHandlers" TargetFolderName="CommandHandlers">
-        <Folder Name="TodoListCommandHandlers" TargetFolderName="TodoListCommandHandlers">
+        <Folder Name="TodoLists" TargetFolderName="TodoLists">
           <ProjectItem ReplaceParameters="true" TargetFileName="ChangeTodoListNameCommandHandler.cs">ChangeTodoListNameCommandHandler.cs</ProjectItem>
           <ProjectItem ReplaceParameters="true" TargetFileName="ChangeTodoNameCommandHandler.cs">ChangeTodoNameCommandHandler.cs</ProjectItem>
           <ProjectItem ReplaceParameters="true" TargetFileName="CompleteTodoCommandHandler.cs">CompleteTodoCommandHandler.cs</ProjectItem>
@@ -27,7 +27,15 @@
         </Folder>
       </Folder>
       <Folder Name="Commands" TargetFolderName="Commands">
-        <Folder Name="TodoListCommands" TargetFolderName="TodoListCommands">
+        <Folder Name="TodoLists" TargetFolderName="TodoLists">
+          <Folder Name="Responses" TargetFolderName="Responses">
+            <ProjectItem ReplaceParameters="true" TargetFileName="ChangeTodoListNameResponse.cs">ChangeTodoListNameResponse.cs</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="ChangeTodoNameResponse.cs">ChangeTodoNameResponse.cs</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="CompleteTodoResponse.cs">CompleteTodoResponse.cs</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="CreateTodoListResponse.cs">CreateTodoListResponse.cs</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="CreateTodoResponse.cs">CreateTodoResponse.cs</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="RemoveTodoResponse.cs">RemoveTodoResponse.cs</ProjectItem>
+          </Folder>
           <ProjectItem ReplaceParameters="true" TargetFileName="ChangeTodoListNameCommand.cs">ChangeTodoListNameCommand.cs</ProjectItem>
           <ProjectItem ReplaceParameters="true" TargetFileName="ChangeTodoNameCommand.cs">ChangeTodoNameCommand.cs</ProjectItem>
           <ProjectItem ReplaceParameters="true" TargetFileName="CompleteTodoCommand.cs">CompleteTodoCommand.cs</ProjectItem>
@@ -35,21 +43,16 @@
           <ProjectItem ReplaceParameters="true" TargetFileName="CreateTodoListCommand.cs">CreateTodoListCommand.cs</ProjectItem>
           <ProjectItem ReplaceParameters="true" TargetFileName="RemoveTodoCommand.cs">RemoveTodoCommand.cs</ProjectItem>
         </Folder>
-        <Folder Name="TodoListResponses" TargetFolderName="TodoListResponses">
-          <ProjectItem ReplaceParameters="true" TargetFileName="ChangeTodoListNameResponse.cs">ChangeTodoListNameResponse.cs</ProjectItem>
-          <ProjectItem ReplaceParameters="true" TargetFileName="ChangeTodoNameResponse.cs">ChangeTodoNameResponse.cs</ProjectItem>
-          <ProjectItem ReplaceParameters="true" TargetFileName="CompleteTodoResponse.cs">CompleteTodoResponse.cs</ProjectItem>
-          <ProjectItem ReplaceParameters="true" TargetFileName="CreateTodoListResponse.cs">CreateTodoListResponse.cs</ProjectItem>
-          <ProjectItem ReplaceParameters="true" TargetFileName="CreateTodoResponse.cs">CreateTodoResponse.cs</ProjectItem>
-          <ProjectItem ReplaceParameters="true" TargetFileName="RemoveTodoResponse.cs">RemoveTodoResponse.cs</ProjectItem>
-        </Folder>
       </Folder>
       <Folder Name="Infrastructure" TargetFolderName="Infrastructure">
-        <ProjectItem ReplaceParameters="true" TargetFileName="ITodoFileService.cs">ITodoFileService.cs</ProjectItem>
+        <Folder Name="TodoLists" TargetFolderName="TodoLists">
+          <ProjectItem ReplaceParameters="true" TargetFileName="ITodoFileService.cs">ITodoFileService.cs</ProjectItem>
+        </Folder>
       </Folder>
       <Folder Name="Repositories" TargetFolderName="Repositories">
         <ProjectItem ReplaceParameters="true" TargetFileName="ITodoListRepository.cs">ITodoListRepository.cs</ProjectItem>
       </Folder>
+      <ProjectItem ReplaceParameters="true" TargetFileName="AssemblyAccessor.cs">AssemblyAccessor.cs</ProjectItem>
       <ProjectItem ReplaceParameters="true" TargetFileName="ModuleDependencies.cs">ModuleDependencies.cs</ProjectItem>
     </Project>
   </TemplateContent>

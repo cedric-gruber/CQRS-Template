@@ -1,5 +1,6 @@
-﻿using Microsoft.Extensions.DependencyInjection;
-using $ext_safeprojectname$.Query.Application.Infrastructure;
+﻿using $ext_safeprojectname$.Query.Application.Infrastructure.TodoLists;
+using $safeprojectname$.TodoLists;
+using Microsoft.Extensions.DependencyInjection;
 
 namespace $safeprojectname$
 {

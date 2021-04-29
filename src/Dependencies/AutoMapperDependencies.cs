@@ -1,16 +1,18 @@
 ﻿using AutoMapper;
+using $ext_safeprojectname$.Query.Application.Models;
 using Microsoft.Extensions.DependencyInjection;
-using $ext_safeprojectname$.Query.Application.Models.Mappings;
+using System;
 
 namespace $safeprojectname$
 {
     public static class AutoMapperDependencies
     {
-        public static void AddAutoMapperDependencies(this IServiceCollection services)
+        public static void AddAutoMapper(this IServiceCollection services, Action<IMapperConfigurationExpression> addCallerProfiles = null)
         {
-            var mapperConfig = new MapperConfiguration(mc =>
+            var mapperConfig = new MapperConfiguration(configure =>
             {
-                mc.AddQueryApplicationProfiles();
+                configure.AddQueryApplicationProfiles();
+                if (addCallerProfiles != null) addCallerProfiles(configure);
             });
 
             IMapper mapper = mapperConfig.CreateMapper();

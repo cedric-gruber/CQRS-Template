@@ -16,7 +16,7 @@
   </TemplateData>
   <TemplateContent>
     <Project TargetFileName="Dependencies.csproj" File="Dependencies.csproj" ReplaceParameters="true">
-      <Folder Name="ExceptionMiddlewares" TargetFolderName="ExceptionMiddlewares">
+      <Folder Name="ExceptionHandlerMiddlewares" TargetFolderName="ExceptionHandlerMiddlewares">
         <ProjectItem ReplaceParameters="true" TargetFileName="AbstractExceptionHandlerMiddleware.cs">AbstractExceptionHandlerMiddleware.cs</ProjectItem>
         <ProjectItem ReplaceParameters="true" TargetFileName="CommandExceptionHandlerMiddleware.cs">CommandExceptionHandlerMiddleware.cs</ProjectItem>
         <ProjectItem ReplaceParameters="true" TargetFileName="CommonExceptionHandlerMiddleware.cs">CommonExceptionHandlerMiddleware.cs</ProjectItem>

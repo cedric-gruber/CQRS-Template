@@ -1,13 +1,13 @@
-﻿using Microsoft.AspNetCore.Builder;
+﻿using $safeprojectname$.ExceptionHandlerMiddlewares;
+using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.DependencyInjection;
-using $safeprojectname$.ExceptionMiddlewares;
 
 namespace $safeprojectname$
 {
     public static class ExceptionDependencies
     {
-        public static void AddExceptionMiddlewares(this IApplicationBuilder app)
+        public static void AddExceptionHandlerMiddlewares(this IApplicationBuilder app)
         {
             app.UseMiddleware<ExceptionHandlerMiddleware>();
             app.UseMiddleware<CommonExceptionHandlerMiddleware>();

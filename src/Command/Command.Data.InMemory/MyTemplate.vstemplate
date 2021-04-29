@@ -16,9 +16,11 @@
   </TemplateData>
   <TemplateContent>
     <Project TargetFileName="Command.Data.InMemory.csproj" File="Command.Data.InMemory.csproj" ReplaceParameters="true">
+      <Folder Name="Repositories" TargetFolderName="Repositories">
+        <ProjectItem ReplaceParameters="true" TargetFileName="TodoListRepository.cs">TodoListRepository.cs</ProjectItem>
+      </Folder>
       <ProjectItem ReplaceParameters="true" TargetFileName="EVENTSOURCING.cs">EVENTSOURCING.cs</ProjectItem>
       <ProjectItem ReplaceParameters="true" TargetFileName="ModuleDependencies.cs">ModuleDependencies.cs</ProjectItem>
-      <ProjectItem ReplaceParameters="true" TargetFileName="TodoListRepository.cs">TodoListRepository.cs</ProjectItem>
     </Project>
   </TemplateContent>
 </VSTemplate>

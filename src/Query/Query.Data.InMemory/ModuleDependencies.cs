@@ -1,5 +1,6 @@
-﻿using Microsoft.Extensions.DependencyInjection;
-using $ext_safeprojectname$.Query.Application.Repositories;
+﻿using $ext_safeprojectname$.Query.Application.Repositories;
+using $safeprojectname$.Repositories;
+using Microsoft.Extensions.DependencyInjection;
 
 namespace $safeprojectname$
 {
