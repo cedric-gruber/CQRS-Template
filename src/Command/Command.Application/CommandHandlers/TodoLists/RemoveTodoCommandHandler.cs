@@ -34,7 +34,7 @@ namespace $safeprojectname$.CommandHandlers.TodoLists
 
             fileService.DeleteFile(todo);
 
-            await repository.Update(todoList);
+            await repository.Save(todoList);
 
             return new RemoveTodoResponse { Aggregate = todo };
         }

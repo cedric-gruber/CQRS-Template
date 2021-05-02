@@ -36,7 +36,7 @@ namespace $safeprojectname$.Repositories
             });
         }
 
-        public Task<bool> Insert(TodoList aggregate)
+        public Task<bool> Save(TodoList aggregate)
         {
             return Task.Run(() =>
             {
@@ -44,25 +44,7 @@ namespace $safeprojectname$.Repositories
 
                 var todoList = dataStore.FirstOrDefault(m => m.Id == aggregate.Id);
 
-                if (todoList != null) return false;
-
-                dataStore.Add(aggregate);
-
-                return true;
-            });
-        }
-
-        public Task<bool> Update(TodoList aggregate)
-        {
-            return Task.Run(() =>
-            {
-                if (EVENTSOURCING.ISACTIVE) StoreEvents(aggregate);
-
-                var todoList = dataStore.FirstOrDefault(m => m.Id == aggregate.Id);
-
-                if (todoList == null) return false;
-
-                dataStore.Remove(todoList);
+                if (todoList != null) dataStore.Remove(todoList);
 
                 dataStore.Add(aggregate);
 

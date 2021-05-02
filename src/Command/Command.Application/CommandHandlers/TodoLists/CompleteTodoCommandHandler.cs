@@ -29,7 +29,7 @@ namespace $safeprojectname$.CommandHandlers.TodoLists
 
             var todo = todoList.CompleteTodo(todoId);
 
-            await repository.Update(todoList);
+            await repository.Save(todoList);
 
             return new CompleteTodoResponse { Aggregate = todo };
         }

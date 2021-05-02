@@ -2,9 +2,16 @@
   "ExpandedNodes": [
     "",
     "\\src",
-    "\\src\\Query",
-    "\\src\\Query\\Query.Infrastructure"
+    "\\src\\Command",
+    "\\src\\Command\\Command.Application",
+    "\\src\\Command\\Command.Application\\CommandHandlers",
+    "\\src\\Command\\Command.Application\\CommandHandlers\\TodoLists",
+    "\\src\\Command\\Command.Application\\Infrastructure\\TodoLists",
+    "\\src\\Command\\Command.Data.InMemory\\Repositories",
+    "\\src\\Command\\Command.Infrastructure\\TodoLists",
+    "\\src\\Query\\Query.Infrastructure",
+    "\\src\\Query\\Query.Infrastructure\\TodoLists"
   ],
-  "SelectedNode": "\\src\\Query\\Query.Infrastructure\\MyTemplate.vstemplate",
+  "SelectedNode": "\\src\\Command\\Command.Application\\CommandHandlers\\TodoLists\\RemoveTodoCommandHandler.cs",
   "PreviewInSolutionExplorer": false
 }

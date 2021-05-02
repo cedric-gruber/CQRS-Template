@@ -8,8 +8,6 @@ namespace $safeprojectname$.Repositories
     {
         Task<TodoList> Get(TodoListId id);
 
-        Task<bool> Insert(TodoList aggregate);
-
-        Task<bool> Update(TodoList aggregate);
+        Task<bool> Save(TodoList aggregate);
     }
 }

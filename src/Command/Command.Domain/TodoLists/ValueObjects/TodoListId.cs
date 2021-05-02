@@ -1,5 +1,5 @@
 ﻿using $safeprojectname$.BaseComponents;
-using $safeprojectname$.Common.Exceptions;
+using $ext_safeprojectname$.Common.Exceptions;
 using System;
 using System.Collections.Generic;
 
