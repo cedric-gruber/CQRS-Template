@@ -1,4 +1,5 @@
 ﻿using $safeprojectname$.BaseComponents;
+using $safeprojectname$.Common.Exceptions;
 using System;
 using System.Collections.Generic;
 
@@ -10,6 +11,7 @@ namespace $safeprojectname$.TodoLists.ValueObjects
 
         public TodoListId(Guid value)
         {
+            if (value == default(Guid)) throw new EmptyParameterException("The Todo List Id value must be initialized");
             Value = value;
         }
 
