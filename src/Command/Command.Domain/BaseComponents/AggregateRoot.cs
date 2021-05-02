@@ -4,7 +4,7 @@ namespace $safeprojectname$.BaseComponents
 {
     public abstract class AggregateRoot
     {
-        protected List<IDomainEvent> events = new List<IDomainEvent>();
+        private List<IDomainEvent> events = new List<IDomainEvent>();
         public IReadOnlyList<IDomainEvent> Events { get { return events; } }
 
         protected T AddEvent<T>(T domainEvent) where T : IDomainEvent

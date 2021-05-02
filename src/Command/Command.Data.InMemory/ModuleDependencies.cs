@@ -7,10 +7,12 @@ namespace $safeprojectname$
 {
     public static class ModuleDependencies
     {
-        public static void AddCommandDataInMemoryModuleDependencies(this IServiceCollection services)
+        public static IServiceCollection AddCommandDataInMemoryModuleDependencies(this IServiceCollection services)
         {
             services.AddSingleton<IMemoryCache, MemoryCache>();
             services.AddSingleton<ITodoListRepository, TodoListRepository>();
+
+            return services;
         }
     }
 }

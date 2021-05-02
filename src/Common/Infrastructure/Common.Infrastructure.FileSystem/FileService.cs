@@ -49,8 +49,8 @@ namespace $safeprojectname$
 
         private string GetFullPath(string filePath)
         {
-            var path = pathAccessor.GetFilePath();
-            return Path.Combine(path, filePath);
+            var basePath = pathAccessor.GetFilePath();
+            return Path.Combine(basePath, filePath);
         }
     }
 }

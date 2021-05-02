@@ -13,7 +13,7 @@ namespace $safeprojectname$
 {
     public static class ModuleDependencies
     {
-        public static void AddModuleDependencies(this IServiceCollection services)
+        public static IServiceCollection AddModuleDependencies(this IServiceCollection services)
         {
             services.AddCommonModuleDependencies();
             services.AddCommonInfrastructureFileSystemModuleDependencies();
@@ -26,6 +26,8 @@ namespace $safeprojectname$
             services.AddQueryApplicationModuleDependencies();
             services.AddQueryDataInMemoryModuleDependencies();
             services.AddQueryInfrastructureModuleDependencies();
+
+            return services;
         }
     }
 }

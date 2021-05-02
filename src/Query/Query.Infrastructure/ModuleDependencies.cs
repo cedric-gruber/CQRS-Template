@@ -6,9 +6,11 @@ namespace $safeprojectname$
 {
     public static class ModuleDependencies
     {
-        public static void AddQueryInfrastructureModuleDependencies(this IServiceCollection services)
+        public static IServiceCollection AddQueryInfrastructureModuleDependencies(this IServiceCollection services)
         {
             services.AddSingleton<ITodoFileService, TodoFileService>();
+
+            return services;
         }
     }
 }

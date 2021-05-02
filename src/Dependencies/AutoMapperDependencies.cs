@@ -7,7 +7,7 @@ namespace $safeprojectname$
 {
     public static class AutoMapperDependencies
     {
-        public static void AddAutoMapper(this IServiceCollection services, Action<IMapperConfigurationExpression> addCallerProfiles = null)
+        public static IServiceCollection AddAutoMapper(this IServiceCollection services, Action<IMapperConfigurationExpression> addCallerProfiles = null)
         {
             var mapperConfig = new MapperConfiguration(configure =>
             {
@@ -17,6 +17,8 @@ namespace $safeprojectname$
 
             IMapper mapper = mapperConfig.CreateMapper();
             services.AddSingleton(mapper);
+
+            return services;
         }
     }
 }

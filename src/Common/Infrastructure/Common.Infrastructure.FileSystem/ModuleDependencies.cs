@@ -4,9 +4,11 @@ namespace $safeprojectname$
 {
     public static class ModuleDependencies
     {
-        public static void AddCommonInfrastructureFileSystemModuleDependencies(this IServiceCollection services)
+        public static IServiceCollection AddCommonInfrastructureFileSystemModuleDependencies(this IServiceCollection services)
         {
             services.AddSingleton<IFileService, FileService>();
+
+            return services;
         }
     }
 }

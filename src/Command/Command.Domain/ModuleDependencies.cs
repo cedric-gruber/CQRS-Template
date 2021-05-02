@@ -4,9 +4,9 @@ namespace $safeprojectname$
 {
     public static class ModuleDependencies
     {
-        public static void AddCommandDomainModuleDependencies(this IServiceCollection services)
+        public static IServiceCollection AddCommandDomainModuleDependencies(this IServiceCollection services)
         {
-
+            return services;
         }
     }
 }
