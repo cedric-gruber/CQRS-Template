@@ -9,7 +9,7 @@ namespace $safeprojectname$
 {
     public static class MediatrDependencies
     {
-        public static void AddMediatR(this IServiceCollection services)
+        public static IServiceCollection AddMediatR(this IServiceCollection services)
         {
             var assemblies = new Assembly[]
                 {
@@ -18,6 +18,8 @@ namespace $safeprojectname$
                 };
 
             services.AddMediatR(assemblies);
+
+            return services;
         }
     }
 }

@@ -1,7 +1,10 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\src",
+    "\\src\\Query",
+    "\\src\\Query\\Query.Infrastructure"
   ],
-  "SelectedNode": "\\src",
+  "SelectedNode": "\\src\\Query\\Query.Infrastructure\\MyTemplate.vstemplate",
   "PreviewInSolutionExplorer": false
 }
