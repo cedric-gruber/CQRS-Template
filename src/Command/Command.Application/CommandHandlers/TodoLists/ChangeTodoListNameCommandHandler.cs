@@ -29,7 +29,7 @@ namespace $safeprojectname$.CommandHandlers.TodoLists
 
             todoList.ChangeName(todoListName);
 
-            await repository.Update(todoList);
+            await repository.Save(todoList);
 
             return new ChangeTodoListNameResponse { Aggregate = todoList };
         }

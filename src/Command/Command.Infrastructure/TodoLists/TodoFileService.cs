@@ -13,7 +13,7 @@ namespace $safeprojectname$.TodoLists
             this.fileService = fileService;
         }
 
-        public void AddOrUpdateFile(Todo todo, string fileContent)
+        public void SaveFile(Todo todo, string fileContent)
         {
             string fileName = GetFileName(todo);
 

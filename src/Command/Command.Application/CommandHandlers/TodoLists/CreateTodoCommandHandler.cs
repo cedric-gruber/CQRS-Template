@@ -34,9 +34,9 @@ namespace $safeprojectname$.CommandHandlers.TodoLists
 
             var aggregate = todoList.AddTodo(todoName);
 
-            fileService.AddOrUpdateFile(aggregate, request.Content);
+            fileService.SaveFile(aggregate, request.Content);
 
-            await repository.Update(todoList);
+            await repository.Save(todoList);
 
             return new CreateTodoResponse { Aggregate = aggregate };
         }

@@ -24,7 +24,7 @@ namespace $safeprojectname$.CommandHandlers.TodoLists
 
             var todoList = TodoList.Create(todoListName);
 
-            await repository.Insert(todoList);
+            await repository.Save(todoList);
 
             return new CreateTodoListResponse { Aggregate = todoList };
         }

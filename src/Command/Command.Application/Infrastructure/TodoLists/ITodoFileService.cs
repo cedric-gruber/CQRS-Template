@@ -4,7 +4,7 @@ namespace $safeprojectname$.Infrastructure.TodoLists
 {
     public interface ITodoFileService
     {
-        void AddOrUpdateFile(Todo todo, string content);
+        void SaveFile(Todo todo, string content);
 
         void DeleteFile(Todo todo);
     }
